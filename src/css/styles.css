@@ -4,6 +4,6 @@
 .loading .display-loading {
   display: block;
 }
-.running .display-running {
+.playing .display-playing {
   display: block;
 }
