@@ -18,6 +18,9 @@ const setup = async () => {
   $canvas.width = $video.width = 640;
   $canvas.height = $video.height = 480;
 
+  globals.ctx.translate($canvas.width, 0);
+  globals.ctx.scale(-1, 1);
+
   setState(STATE_PLAYING);
   globals.handPose.detectStart($video, (results) => {
     globals.hands = results;
