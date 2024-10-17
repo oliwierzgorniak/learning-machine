@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="instructions">
+<html lang="en" class="loading">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -14,8 +14,25 @@
     <script defer type="module" src="./src/main.js"></script>
   </head>
   <body>
+    <h1 class="title">Math eliminator</h1>
+    <section class="loading-container hidden display-loading">
+      <img
+        class="loading-container__spinner"
+        src="./spinner.svg"
+        alt="loading spinner"
+      />
+    </section>
+    <section class="instructions-container hidden display-instructions">
+      <h2 class="instructions-container__title">Instructions</h2>
+      <p class="instructions-container__paragraph">
+        When you see a math expression coming down say the number that needs to
+        be added to the expression so it equals 10 and then use your hand to
+        swipe it away from the screen. You need to do it before the expression
+        leaves the screen. Otherwise you lose a life.
+      </p>
+      <button class="instructions-container__button">Start</button>
+    </section>
     <article class="playing-container hidden display-playing container">
-      <h1 class="playing-container__title">Math eliminator</h1>
       <span class="playing-container__score-text"
         >Score: <span class="playing-container__score">0</span></span
       >
@@ -30,17 +47,5 @@
         <span class="playing-container__addition">4</span></span
       >
     </article>
-    <section class="instructions-bg hidden display-instructions">
-      <div class="instructions-container">
-        <h2 class="instructions-container__title">Instructions</h2>
-        <p class="instructions-container__paragraph">
-          When you see a math expression coming down say the number that needs
-          to be added to the expression so it equals 10 and then use your hand
-          to swipe it away from the screen. You need to do it before the
-          expression leaves the screen. Otherwise you lose a life.
-        </p>
-        <button class="instructions-container__button">Start</button>
-      </div>
-    </section>
   </body>
 </html>

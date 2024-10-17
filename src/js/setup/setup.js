@@ -1,5 +1,5 @@
 import globals from "../globals";
-import setState, { STATE_PLAYING } from "../utilities/setState";
+import setState, { STATE_INSTRUCTIONS } from "../utilities/setState";
 
 export let $video = document.createElement("video");
 
@@ -21,7 +21,7 @@ const setup = async () => {
   globals.ctx.translate($canvas.width, 0);
   globals.ctx.scale(-1, 1);
 
-  setState(STATE_PLAYING);
+  setState(STATE_INSTRUCTIONS);
   globals.handPose.detectStart($video, (results) => {
     globals.hands = results;
   });
