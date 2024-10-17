@@ -1,0 +1,32 @@
+.instructions .instructions-bg {
+  position: fixed;
+  block-size: 100vh;
+  inset: 0 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.instructions-container {
+  max-inline-size: 30rem;
+  background-color: var(--background-color);
+  border: 0.5em solid #4a3307;
+  padding: 1em;
+  font-size: 1.2rem;
+}
+
+.instructions-container__title {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.instructions-container__button {
+  margin: auto;
+  display: block;
+  margin-top: 1.5em;
+  font-weight: 700;
+  padding: 0.35em 1.1em 0.35em 1em;
+  cursor: pointer;
+  border: none;
+}

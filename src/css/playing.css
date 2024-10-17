@@ -1,0 +1,33 @@
+.playing .playing-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  margin-block-start: 2rem;
+}
+
+.playing-container__title {
+  grid-column: 1/3;
+  text-align: center;
+  font-size: 3rem;
+  margin-block-end: 0.4em;
+}
+
+.playing-container__score-text {
+  align-self: end;
+  font-size: 2rem;
+}
+
+.playing-container__lives {
+  display: flex;
+  justify-self: end;
+}
+
+.playing-container__canvas {
+  grid-column: 1/3;
+  width: 100%;
+}
+
+.playing-container__addition-text {
+  grid-column: 1/3;
+  text-align: center;
+  font-size: 2.3rem;
+}
