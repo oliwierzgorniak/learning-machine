@@ -6,7 +6,7 @@ import setup from "./setup";
 const preload = async () => {
   setState(STATE_LOADING);
   requestAnimationFrame(draw);
-  globals.handPose = ml5.handPose();
+  globals.handPose = ml5.handPose({ flipHorizontal: true });
   await globals.handPose.ready;
   console.log("model ready");
 

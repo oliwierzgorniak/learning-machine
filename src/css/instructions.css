@@ -1,6 +1,6 @@
 .instructions-container {
   max-inline-size: 30rem;
-  background-color: var(--background-color);
+  background-color: var(--background-color-darker);
   border: 0.5em solid #4a3307;
   padding: 1em 2em 1.7em 2em;
   font-size: 1.2rem;
