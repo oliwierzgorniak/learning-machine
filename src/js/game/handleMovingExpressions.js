@@ -2,7 +2,7 @@ import globals from "../globals";
 import { expressions } from "../consts";
 import getRandom from "../utilities/getRandom";
 
-const moveExpressions = () => {
+const handleMovingExpressions = () => {
   setInterval(() => {
     if (globals.expressions.length < 1) {
       const expression = getRandom(expressions);
@@ -18,4 +18,4 @@ const moveExpressions = () => {
   }, 500);
 };
 
-export default moveExpressions;
+export default handleMovingExpressions;
