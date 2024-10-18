@@ -13,8 +13,10 @@ const draw = () => {
 
     if (globals.hands.length > 0) {
       const relevantPoints = [
-        globals.hands[0].index_finger_tip,
-        globals.hands[0].thumb_tip,
+        globals.hands[0].middle_finger_tip,
+        globals.hands[0].middle_finger_dip,
+        globals.hands[0].middle_finger_pip,
+        globals.hands[0].middle_finger_mcp,
       ];
       relevantPoints.forEach((keypoint) => {
         globals.ctx.beginPath();
