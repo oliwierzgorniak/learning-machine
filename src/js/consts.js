@@ -116,3 +116,6 @@ export const TEXT_COLOR = "white";
 export const FRAME_COLOR = "#4A3307";
 export const CANVAS_WIDTH = 640;
 export const CANVAS_HEIGHT = 480;
+export const EXPRESSION_WIDTH = 155;
+export const EXPRESSION_HEIGHT = 60;
+export const EXPRESSION_FRAME = 6;
