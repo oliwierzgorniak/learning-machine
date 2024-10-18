@@ -1,3 +1,4 @@
+import handleAdditionChange from "../game/handleAdditionChange";
 import moveExpressions from "../game/moveExpressions";
 import setState, { STATE_PLAYING } from "../utilities/setState";
 
@@ -6,6 +7,7 @@ const handleInstructionsClose = () => {
   $button.addEventListener("click", () => {
     setState(STATE_PLAYING);
     moveExpressions();
+    handleAdditionChange();
   });
 };
 

@@ -26,6 +26,10 @@ const setup = async () => {
   globals.handPose.detectStart($video, (results) => {
     globals.hands = results;
   });
+
+  globals.classifier.classifyStart((results) => {
+    globals.classification = results;
+  });
 };
 
 export default setup;

@@ -8,7 +8,13 @@ const preload = async () => {
   requestAnimationFrame(draw);
   globals.handPose = ml5.handPose({ flipHorizontal: true });
   await globals.handPose.ready;
-  console.log("model ready");
+  console.log("handPose model ready");
+
+  globals.classifier = ml5.soundClassifier("SpeechCommands18w", {
+    probabilityThreshold: 0.7,
+  });
+  await globals.classifier.ready;
+  console.log("soundClassifier model ready");
 
   setup();
 };
