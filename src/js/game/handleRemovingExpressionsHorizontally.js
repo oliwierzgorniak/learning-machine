@@ -1,4 +1,4 @@
-import { CANVAS_WIDTH, EXPRESSION_WIDTH } from "../consts";
+import { CANVAS_HEIGHT, CANVAS_WIDTH, EXPRESSION_WIDTH } from "../consts";
 import globals from "../globals";
 import updateScore from "../ui/updateScore";
 import setState, { STATE_END } from "../utilities/setState";
@@ -22,7 +22,9 @@ const handleRemovingExpressionsHorizontally = () => {
         ];
 
         if (globals.addition == expression.solution) {
-          globals.score += 1;
+          globals.score += Math.ceil(
+            (1 - expression.position.y / CANVAS_HEIGHT) / 0.2
+          );
           const $score = document.querySelector(".playing-container__score");
           $score.textContent = globals.score;
         } else {
