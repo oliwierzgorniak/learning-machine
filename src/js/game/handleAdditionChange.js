@@ -1,4 +1,3 @@
-import globals from "../globals";
 import { classification } from "../setup/setup";
 import wordToDigit from "../utilities/wordToDigit";
 

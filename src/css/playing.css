@@ -1,12 +1,13 @@
 .playing .playing-container {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: min-content auto;
   margin-block-start: 2rem;
 }
 
 .playing-container__score-text {
   align-self: end;
   font-size: 2rem;
+  white-space: nowrap;
 }
 
 .playing-container__hearts {

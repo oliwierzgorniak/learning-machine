@@ -30,6 +30,7 @@ body {
   font-family: "Caveat", cursive;
   color: var(--text-color);
   font-weight: 400;
+  padding: 0.3em;
 }
 
 .container {
