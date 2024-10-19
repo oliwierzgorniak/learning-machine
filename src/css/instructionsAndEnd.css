@@ -1,0 +1,39 @@
+.instructions-container,
+.end-container {
+  max-inline-size: 30rem;
+  background-color: var(--background-color-darker);
+  border: 0.35em solid #4a3307;
+  padding: 1em 2em 1.7em 2em;
+  font-size: 1.2rem;
+  margin: auto;
+}
+
+.end-container {
+  inline-size: min-content;
+}
+
+.instructions-container__title,
+.end-container__title {
+  text-align: center;
+  font-size: 2.2rem;
+  white-space: nowrap;
+}
+
+.end-container__score-text {
+  text-align: center;
+  margin: auto;
+  display: block;
+  font-size: 1.8rem;
+  white-space: nowrap;
+}
+
+.instructions-container__button,
+.end-container__button {
+  margin: auto;
+  display: block;
+  margin-top: 1.5em;
+  font-weight: 700;
+  padding: 0.35em 1.1em 0.35em 1em;
+  cursor: pointer;
+  border: none;
+}

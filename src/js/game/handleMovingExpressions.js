@@ -8,7 +8,8 @@ const handleMovingExpressions = () => {
       const expression = getRandom(expressions);
       globals.expressions.push({
         position: { x: 200, y: 0 },
-        content: expression,
+        content: expression.content,
+        solution: expression.solution,
       });
     }
 

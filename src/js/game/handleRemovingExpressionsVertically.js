@@ -1,5 +1,7 @@
 import { CANVAS_HEIGHT } from "../consts";
 import globals from "../globals";
+import updateScore from "../ui/updateScore";
+import setState, { STATE_END } from "../utilities/setState";
 import removeHeartFromUi from "./handleRemovingExpressions/removeHeartFromUI";
 
 const handleRemovingExpressionsVertically = () => {
@@ -16,6 +18,10 @@ const handleRemovingExpressionsVertically = () => {
 
         globals.hearts--;
         removeHeartFromUi();
+        if (globals.hearts <= 0) {
+          updateScore();
+          setState(STATE_END);
+        }
       }
     });
   }, 200);

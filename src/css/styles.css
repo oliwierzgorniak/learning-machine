@@ -21,6 +21,10 @@
   display: block;
 }
 
+.end .display-end {
+  display: block;
+}
+
 body {
   background-color: var(--background-color);
   font-family: "Caveat", cursive;

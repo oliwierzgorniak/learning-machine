@@ -6,6 +6,8 @@ const globals = {
   caughtExpressionIndex: null,
   catchPointIndex: null,
   catchOffsetX: 0,
+  addition: 4,
+  score: 0,
 };
 
 export default globals;

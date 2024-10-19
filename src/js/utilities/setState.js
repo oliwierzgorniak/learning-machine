@@ -3,7 +3,13 @@ import globals from "../globals";
 export const STATE_LOADING = "loading";
 export const STATE_PLAYING = "playing";
 export const STATE_INSTRUCTIONS = "instructions";
-const ALL_STATES = [STATE_LOADING, STATE_PLAYING, STATE_INSTRUCTIONS];
+export const STATE_END = "end";
+const ALL_STATES = [
+  STATE_LOADING,
+  STATE_PLAYING,
+  STATE_INSTRUCTIONS,
+  STATE_END,
+];
 
 const setState = (value) => {
   console.log("setState", value);
