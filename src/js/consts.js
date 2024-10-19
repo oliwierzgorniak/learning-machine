@@ -1,5 +1,4 @@
 export const expressions = [
-  { content: "0 + 0", solution: 10 },
   { content: "0 + 1", solution: 9 },
   { content: "0 + 2", solution: 8 },
   { content: "0 + 3", solution: 7 },
