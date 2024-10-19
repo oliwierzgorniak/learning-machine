@@ -597,3 +597,4 @@ export const CANVAS_HEIGHT = 480;
 export const EXPRESSION_WIDTH = 200;
 export const EXPRESSION_HEIGHT = 60;
 export const EXPRESSION_FRAME = 6;
+export const STARTING_FALLING_SPEED = 7;

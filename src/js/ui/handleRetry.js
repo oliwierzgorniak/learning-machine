@@ -1,7 +1,18 @@
+import { STARTING_FALLING_SPEED } from "../consts";
+import globals from "../globals";
+import setState, { STATE_PLAYING } from "../utilities/setState";
+import showAllHearts from "./handleRetry/showAllHearts";
+import updateScore from "./updateScore";
+
 const handleRetry = () => {
   const $button = document.querySelector(".end-container__button");
   $button.addEventListener("click", () => {
-    window.location.reload();
+    globals.fallingSpeed = STARTING_FALLING_SPEED;
+    globals.score = 0;
+    updateScore();
+    showAllHearts();
+    setState(STATE_PLAYING);
+    globals.expressions = [];
   });
 };
 

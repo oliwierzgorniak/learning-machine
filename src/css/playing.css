@@ -9,7 +9,7 @@
   font-size: 2rem;
 }
 
-.playing-container__lives {
+.playing-container__hearts {
   display: flex;
   justify-self: end;
 }

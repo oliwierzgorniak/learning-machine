@@ -3,7 +3,7 @@ import globals from "../globals";
 import toggleMusic from "../ui/toggleMusic";
 import updateScore from "../ui/updateScore";
 import setState, { STATE_END } from "../utilities/setState";
-import removeHeartFromUi from "./handleRemovingExpressions/removeHeartFromUI";
+import removeHeart from "../ui/removeHeart";
 
 const handleRemovingExpressionsHorizontally = () => {
   setInterval(() => {
@@ -30,7 +30,7 @@ const handleRemovingExpressionsHorizontally = () => {
           $score.textContent = globals.score;
         } else {
           globals.hearts--;
-          removeHeartFromUi();
+          removeHeart();
           if (globals.hearts <= 0) {
             updateScore();
             toggleMusic();

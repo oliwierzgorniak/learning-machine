@@ -2,15 +2,11 @@ import globals from "../globals";
 import { CANVAS_WIDTH, EXPRESSION_WIDTH, expressions } from "../consts";
 import getRandom from "../utilities/getRandom";
 
-let nExpressions = 0;
-let fallingSpeed = 7;
-
 const handleMovingExpressions = () => {
   setInterval(() => {
     if (globals.expressions.length < 1) {
       const expression = getRandom(expressions[globals.gameDifficulty]);
-      nExpressions++;
-      fallingSpeed += 1;
+      globals.fallingSpeed += 1;
       globals.expressions.push({
         position: {
           x:
@@ -25,7 +21,7 @@ const handleMovingExpressions = () => {
     }
 
     globals.expressions.forEach((expression) => {
-      expression.position.y += fallingSpeed;
+      expression.position.y += globals.fallingSpeed;
     });
   }, 500);
 };
