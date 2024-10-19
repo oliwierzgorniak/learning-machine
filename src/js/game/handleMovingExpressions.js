@@ -8,7 +8,7 @@ let fallingSpeed = 7;
 const handleMovingExpressions = () => {
   setInterval(() => {
     if (globals.expressions.length < 1) {
-      const expression = getRandom(expressions);
+      const expression = getRandom(expressions[globals.gameDifficulty]);
       nExpressions++;
       fallingSpeed += 1;
       globals.expressions.push({
