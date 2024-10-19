@@ -6,7 +6,6 @@ const globals = {
   hearts: 3,
   fallingSpeed: STARTING_FALLING_SPEED,
   caughtExpressionIndex: null,
-  addition: 4,
   score: 0,
 };
 

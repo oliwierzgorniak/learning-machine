@@ -4,6 +4,7 @@ import toggleMusic from "../ui/toggleMusic";
 import updateScore from "../ui/updateScore";
 import setState, { STATE_END } from "../utilities/setState";
 import removeHeart from "../ui/removeHeart";
+import { addition } from "./handleAdditionChange";
 
 const handleRemovingExpressionsHorizontally = () => {
   setInterval(() => {
@@ -22,7 +23,7 @@ const handleRemovingExpressionsHorizontally = () => {
           ...globals.expressions.slice(i + 1),
         ];
 
-        if (globals.addition == expression.solution) {
+        if (addition == expression.solution) {
           globals.score += Math.ceil(
             (1 - expression.position.y / CANVAS_HEIGHT) / 0.2
           );

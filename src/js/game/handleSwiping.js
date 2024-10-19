@@ -1,5 +1,6 @@
 import { EXPRESSION_HEIGHT, EXPRESSION_WIDTH } from "../consts";
 import globals from "../globals";
+import { hands } from "../setup/setup";
 import getRelevantPoints from "./handleSwiping/getRelevantPoints";
 
 let lastHandPointX = null;
@@ -9,7 +10,7 @@ let catchPointIndex = null;
 
 const handleSwiping = () => {
   setInterval(() => {
-    if (globals.hands.length == 0) return;
+    if (hands.length == 0) return;
 
     const relevantPoints = getRelevantPoints();
 

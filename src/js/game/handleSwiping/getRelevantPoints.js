@@ -1,10 +1,10 @@
-import globals from "../../globals";
+import { hands } from "../../setup/setup";
 
 const getRelevantPoints = () => [
-  globals.hands[0].middle_finger_tip,
-  globals.hands[0].middle_finger_dip,
-  globals.hands[0].middle_finger_pip,
-  globals.hands[0].middle_finger_mcp,
+  hands[0].middle_finger_tip,
+  hands[0].middle_finger_dip,
+  hands[0].middle_finger_pip,
+  hands[0].middle_finger_mcp,
 ];
 
 export default getRelevantPoints;

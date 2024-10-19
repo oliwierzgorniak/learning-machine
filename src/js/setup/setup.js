@@ -1,8 +1,11 @@
 import { CANVAS_HEIGHT, CANVAS_WIDTH } from "../consts";
 import globals from "../globals";
 import setState, { STATE_INSTRUCTIONS } from "../utilities/setState";
+import { classifier, handPose } from "./preload";
 
 export let $video = document.createElement("video");
+export let classification;
+export let hands;
 
 const setup = async () => {
   console.log("setup");
@@ -19,16 +22,13 @@ const setup = async () => {
   $canvas.width = $video.width = CANVAS_WIDTH;
   $canvas.height = $video.height = CANVAS_HEIGHT;
 
-  // globals.ctx.translate($canvas.width, 0);
-  // globals.ctx.scale(-1, 1);
-
   setState(STATE_INSTRUCTIONS);
-  globals.handPose.detectStart($video, (results) => {
-    globals.hands = results;
+  handPose.detectStart($video, (results) => {
+    hands = results;
   });
 
-  globals.classifier.classifyStart((results) => {
-    globals.classification = results;
+  classifier.classifyStart((results) => {
+    classification = results;
   });
 };
 
