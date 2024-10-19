@@ -42,3 +42,7 @@
   cursor: pointer;
   border: none;
 }
+
+.end-container__button {
+  margin-inline: auto;
+}
