@@ -3,7 +3,7 @@ import handleMovingExpressions from "./game/handleMovingExpressions";
 import handleRemovingExpressionsHorizontally from "./game/handleRemovingExpressionsHorizontally";
 import handleRemovingExpressionsVertically from "./game/handleRemovingExpressionsVertically";
 import handleSwiping from "./game/handleSwiping";
-import toggleMusic from "./ui/toggleMusic";
+import playMusic from "./ui/playMusic";
 
 const handleGame = () => {
   handleMovingExpressions();
@@ -11,7 +11,7 @@ const handleGame = () => {
   handleRemovingExpressionsVertically();
   handleRemovingExpressionsHorizontally();
   handleSwiping();
-  toggleMusic();
+  // playMusic();
 };
 
 export default handleGame;

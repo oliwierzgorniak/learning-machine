@@ -1,10 +1,10 @@
 import { CANVAS_HEIGHT, CANVAS_WIDTH, EXPRESSION_WIDTH } from "../consts";
 import globals from "../globals";
-import toggleMusic from "../ui/toggleMusic";
 import updateScore from "../ui/updateScore";
 import setState, { STATE_END } from "../utilities/setState";
 import removeHeart from "../ui/removeHeart";
 import { addition } from "./handleAdditionChange";
+import endMusic from "../ui/endMusic";
 
 const handleRemovingExpressionsHorizontally = () => {
   setInterval(() => {
@@ -33,8 +33,8 @@ const handleRemovingExpressionsHorizontally = () => {
           globals.hearts--;
           removeHeart();
           if (globals.hearts <= 0) {
+            // endMusic();
             updateScore();
-            toggleMusic();
             setState(STATE_END);
           }
         }

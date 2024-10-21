@@ -16,7 +16,7 @@ export let addition = 4;
 
 const handleAdditionChange = () => {
   setInterval(() => {
-    if (classification && classification[0]?.confidence > 0.9) {
+    if (classification && classification[0]?.confidence > 0.98) {
       const prediction = classification[0];
       if (!allowedWords.includes(prediction.label)) return;
       const predictedWord = prediction.label;
@@ -24,7 +24,7 @@ const handleAdditionChange = () => {
       const $addition = document.querySelector(".playing-container__addition");
       $addition.textContent = wordToDigit[predictedWord];
     }
-  }, 100);
+  }, 50);
 };
 
 export default handleAdditionChange;
