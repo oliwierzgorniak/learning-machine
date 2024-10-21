@@ -3,6 +3,7 @@ import globals from "../globals";
 import updateScore from "../ui/updateScore";
 import setState, { STATE_END } from "../utilities/setState";
 import removeHeart from "../ui/removeHeart";
+import toggleMusic from "../ui/toggleMusic";
 
 const handleRemovingExpressionsVertically = () => {
   setInterval(() => {
@@ -20,6 +21,7 @@ const handleRemovingExpressionsVertically = () => {
         removeHeart();
         if (globals.hearts <= 0) {
           updateScore();
+          toggleMusic();
           setState(STATE_END);
         }
       }
